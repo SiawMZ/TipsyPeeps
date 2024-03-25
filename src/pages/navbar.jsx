@@ -82,7 +82,7 @@ export default function Navbar() {
             </li>
             <li>
               <details>
-                <summary>Parent</summary>
+                <summary>Stay Tipsy</summary>
                 <ul className="p-2">
                   <li>
                     <a>Submenu 1</a>
@@ -97,6 +97,9 @@ export default function Navbar() {
               <Link to="/signup">
                 <a>Join US</a>
               </Link>
+            </li>
+            <li>
+              <a>About us</a>
             </li>
           </ul>
         </div>

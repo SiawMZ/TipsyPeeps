@@ -1,10 +1,11 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function GridItems() {
-  const [description1, setDescription1] = useState(false);
-  const [description2, setDescription2] = useState(false);
-  const [description3, setDescription3] = useState(false);
-  const [description4, setDescription4] = useState(false);
+  //const [description1, setDescription1] = useState(false);
+  //const [description2, setDescription2] = useState(false);
+  //const [description3, setDescription3] = useState(false);
+  //const [description4, setDescription4] = useState(false);
 
   const handleClass1 = () => {
     window.location.href =
@@ -28,24 +29,27 @@ export default function GridItems() {
   return (
     <>
       {/* big grid */}
+
       <div className="grid grid-cols-4 grid-rows-5 gap-4 px-28 ">
         <div className="col-span-2 row-span-4 bg-base-100 image-full rounded-lg">
-          <div className=" card flex ">
-            <figure>
-              <img
-                src="https://images.pexels.com/photos/1993691/pexels-photo-1993691.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                className="hover:opacity-45"
-              />
-            </figure>
-            <div className="card-body ">
-              <h2 className="card-title text-3xl font-WorkSans justify-center">
-                Community
-              </h2>
-              <p className="relative text-center">
-                Tried something tasty or bad? Share your thought with us too!!
-              </p>
+          <Link to="community">
+            <div className=" card flex ">
+              <figure>
+                <img
+                  src="https://images.pexels.com/photos/1993691/pexels-photo-1993691.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  className="hover:opacity-45"
+                />
+              </figure>
+              <div className="card-body ">
+                <h2 className="card-title text-3xl font-WorkSans justify-center">
+                  Community
+                </h2>
+                <p className="relative text-center">
+                  Tried something tasty or bad? Share your thought with us too!!
+                </p>
+              </div>
             </div>
-          </div>
+          </Link>
         </div>
 
         {/* grid 1 */}
@@ -63,16 +67,16 @@ export default function GridItems() {
               }}
             >
               <div
-                className=" card-body bg-cover bg-center h-[300px] rounded-lg hover:opacity-45"
+                className="grayscale card-body bg-cover bg-center h-[300px] rounded-lg hover:grayscale-0"
                 style={{
                   backgroundImage:
-                    "url(https://images.pexels.com/photos/19401971/pexels-photo-19401971/free-photo-of-close-up-of-a-man-in-a-suit-stirring-his-cocktail.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)",
+                    "url(https://images.pexels.com/photos/2611814/pexels-photo-2611814.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)",
                 }}
               >
                 {" "}
               </div>
             </a>
-            {description1 && <p className="absolute left-28 top-14">testing</p>}
+            {/* {description1 && <p className="absolute left-28 top-14">testing</p>} */}
             <div className=" static card-title text-3xl font-WorkSans justify-center ">
               Mixology
             </div>
@@ -94,14 +98,14 @@ export default function GridItems() {
               }}
             >
               <div
-                className="card-body bg-cover bg-center rounded-lg h-[300px] hover:opacity-45"
+                className="grayscale card-body bg-cover bg-center rounded-lg h-[300px] hover:grayscale-0"
                 style={{
                   backgroundImage:
-                    "url(https://images.pexels.com/photos/8090043/pexels-photo-8090043.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)",
+                    "url(https://images.pexels.com/photos/2702805/pexels-photo-2702805.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)",
                 }}
               ></div>
             </a>
-            {description2 && <p className="absolute left-28 top-14">testing</p>}
+            {/* {description2 && <p className="absolute left-28 top-14">testing</p>} */}
             <div className="static card-title text-3xl font-WorkSans justify-center">
               Spirits Guide
             </div>
@@ -123,14 +127,14 @@ export default function GridItems() {
               }}
             >
               <div
-                className="card-body bg-cover bg-center h-[300px] hover:opacity-45"
+                className="grayscale card-body bg-cover bg-center h-[300px] hover:grayscale-0"
                 style={{
                   backgroundImage:
-                    "url(https://images.pexels.com/photos/13966548/pexels-photo-13966548.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)",
+                    "url(https://images.pexels.com/photos/1267287/pexels-photo-1267287.jpeg?auto=compress&cs=tinysrgb&w=600)",
                 }}
               ></div>
             </a>
-            {description3 && <p className="absolute left-28 top-14">testing</p>}
+            {/* {description3 && <p className="absolute left-28 top-14">testing</p>} */}
             <div className="static card-title text-3xl font-WorkSans justify-center">
               Craft Beers
             </div>
@@ -152,14 +156,14 @@ export default function GridItems() {
               }}
             >
               <div
-                className="card-body bg-cover bg-center h-[300px] hover:opacity-45"
+                className="grayscale card-body bg-cover bg-center h-[300px] hover:grayscale-0"
                 style={{
                   backgroundImage:
-                    "url(https://images.pexels.com/photos/274192/pexels-photo-274192.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)",
+                    "url(https://images.pexels.com/photos/4691224/pexels-photo-4691224.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)",
                 }}
               ></div>
             </a>
-            {description4 && <p className="absolute left-28 top-14">testing</p>}
+            {/* {description4 && <p className="absolute left-28 top-14">testing</p>} */}
             <div className="static card-title text-3xl font-WorkSans justify-center">
               Bar Hopping
             </div>

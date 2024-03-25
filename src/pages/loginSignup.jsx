@@ -31,8 +31,8 @@ export const LoginSignup = () => {
           </div>
 
           {/* card */}
-          <div className="card shrink-0 w-full max-w-lg shadow-xl shadow-stone-950 backdrop-blur-md mr-20">
-            <form className="card-body w">
+          <div className="card shrink-0 w-full max-w-lg shadow-xl shadow-stone-800 backdrop-blur-md mr-20 hover:shadow-lg hover:shadow-stone-950">
+            <form className="card-body">
               <div className="form-control">
                 <label className="label">
                   <span className="label-text">Email</span>
